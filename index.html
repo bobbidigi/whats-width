@@ -27,16 +27,17 @@
     <h4>What is the elements true width?</h4>
   <div id="guessWidth"></div>
   <code>
-  <code class="none"><span class="yellow">#box-style</span>{
-  <span class="purple">box-sizing</span>:<span class="orange" id="box-sizing"></span><span class="none">;   </span>
-  }</code>       
-  <!-- <div class="cf"></div>   -->
+  <code class="code-one">
+  <span class="yellow">#box-style</span>{
+  <span class="purple">box-sizing</span>:<span class="orange" id="box-sizing"></span><span class="none">;</span>
+  }</code>
+  <code class="code-two">       
   <span class="yellow">#box</span>{  
   <span class="purple">width</span>:<span class="orange" id="width"></span>;
-  <span class="purple">margin</span>:<span class="orange" id="margin"></span>;  
+  <span class="purple">margin</span>:<span class="orange" id="margin"></span>; 
   <span class="purple">padding</span>:<span class="orange" id="padding"></span>;  
-  <span class="purple">border</span>:<span class="orange" id="border"></span>;   
-  }
+  <span class="purple">border</span>:<span class="orange" id="border"></span>; 
+  }</code>
   </code>
   </section>
 <div id="great">Great Job!!!</div>
@@ -46,8 +47,21 @@
     <button id="answer2"></button>
   </div>
 
-  <div class="result open"></div>  
-  <h5>A pen by Rob Allen</h5>
+  <div class="result open"></div>
+  <section id="second-section" class="main-section">
+    <h4>More details about using what youve just learned.</h4>
+    <p>It's important to know your elements true width when using percentages and calc().</p>
+    <p>The most useful ability of calc() is its ability to mix units, like percentages and pixels.Page not finished</p>
+  <code class="code-three">
+  <span class="yellow">#box</span>{  
+  <span class="purple">width</span>:<span class="orange">calc(50% - 84px)</span>;
+  <span class="purple">margin</span>:<span class="orange">20px</span>; 
+  <span class="purple">padding</span>:<span class="orange">20px</span>; 
+  <span class="purple">border</span>:<span class="orange">2px solid pink</span>; 
+  }</code>
+  </section>
+  <footer><h5> Rob Allen</h5></footer>  
+  
 
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js" type="text/javascript"></script>

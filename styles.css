@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  text-align: center;
-  color: #fff;
 }
 body{
   background: #E040FB;
+  color: aliceblue;    
 }
-header{
+header{    
   width: calc(100% -40px);
   padding: 15px;
   background: #009688; 
 }
 header h1{
+    text-align: center;
     font-size: 18px;
 }
 header span{
@@ -32,7 +32,7 @@ header span{
 }
 button{
  width: calc(33.33333% - 10px);
- height: 31px;
+ color: aliceblue;    
  background: #9C27B0;
  border: none;
  padding: 5px;
@@ -41,19 +41,15 @@ button{
  cursor: pointer; 
 }
 button:hover{
-  background: #BA68C8;
-  color: #fff;
+  background: pink;
+  color: #9C27B0;
   border: 1px solid purple;
 }
 .selected{
   background: pink;
   color: #9C27B0;
 }
-.none{
-/*   display: none; */
-  padding:0;
-  margin: -2em 0 0 0;
-}
+
 .cf{
   clear: both;
 }
@@ -61,7 +57,8 @@ button:hover{
 h4{
   letter-spacing: 1px;
   margin-bottom: 10px;
-  color: #666;
+  color: #4d4e53;
+  text-align: center;    
 }
 hr{
   margin: 10px;
@@ -97,19 +94,30 @@ code{
   word-wrap: normal;
   line-height: 1.5;
   background:  darkslategrey;
-  padding: 0 15px;
-  margin: 0 5px;
+  padding: 0;
+  margin: 0;    
   border-radius:5px;
+  color: #fff;
+  font-weight: 500;    
+}
+.code-one{
+  display: none; 
+  margin: -2.75em 1px 0 1px;
+  overflow: hidden;    
+}
+.code-two{
+  margin: -2.75em 1px 0 1px; 
 }
 p{
-  color: #000;
+/*  color: #000;*/
 }
 #great {
   margin: 0 auto;
-  padding 5px 10px;
+  padding 15px 10px;
   width: 200px;
   background-color:#9C27B0;
   opacity: 0;
+  text-align: center;    
 }
 .result{
   background: rgba(0,0,0,0.9);
@@ -146,7 +154,8 @@ p{
     max-width: 80%;
   }
   button{
-    font-size: 16px; 
+    font-size: 16px;
+     height: 31px;  
   }
   section{
     margin: 0 auto;
