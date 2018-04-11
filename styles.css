@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+}
+body{
+  background: #E040FB;
+}
+header{
+  width: calc(100% -40px);
+  padding: 15px;
+  background: #009688; 
+}
+header h1{
+    font-size: 18px;
+}
+header span{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 1px solid #9C27B0;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#stripe{
+  margin: 10px auto;
+  width: 100%;
+  height: 30px;
+  text-align: center; 
+}
+button{
+ width: calc(33.33333% - 10px);
+ height: 31px;
+ background: #9C27B0;
+ border: none;
+ padding: 5px;
+ border-radius: 5px;
+ font-size: 13px; 
+ cursor: pointer; 
+}
+button:hover{
+  background: #BA68C8;
+  color: #fff;
+  border: 1px solid purple;
+}
+.selected{
+  background: pink;
+  color: #9C27B0;
+}
+.none{
+/*   display: none; */
+  padding:0;
+  margin: -2em 0 0 0;
+}
+.cf{
+  clear: both;
+}
+
+h4{
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #666;
+}
+hr{
+  margin: 10px;
+}
+#guessWidth{
+  background: #9C27B0;
+}
+section {
+  padding: 2.5%; 
+  color: #4d4e53;
+  margin:5px;
+  font-size:0.96em;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    
+}
+.yellow{
+  color: yellow;
+}
+.purple{
+  color: #ba68c8;
+}
+.orange{
+  color: orange;
+  margin-left: 5px; 
+}
+code{
+  display:block;
+  letter-spacing: 1px;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  background:  darkslategrey;
+  padding: 0 15px;
+  margin: 0 5px;
+  border-radius:5px;
+}
+p{
+  color: #000;
+}
+#great {
+  margin: 0 auto;
+  padding 5px 10px;
+  width: 200px;
+  background-color:#9C27B0;
+  opacity: 0;
+}
+.result{
+  background: rgba(0,0,0,0.9);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  animation: open 1s ease-in-out forwards ;
+  display:none;
+}
+@keyframes open {
+  from{opacity:0}
+  to{opacity:1}
+}
+.result h1{
+  mix-blend-mode:  hard-light;
+  background: transparent;
+}
+
+@media(min-width: 400px){
+  button{
+    font-size: 14px; 
+  }
+}
+@media(min-width: 600px){
+  #stripe{
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  button{
+    font-size: 16px; 
+  }
+  section{
+    margin: 0 auto;
+    max-width: 66.66666%;
+  }
+}
+@media(min-width: 750px){
+  button{
+    font-size: 18px; 
+  }
+}
