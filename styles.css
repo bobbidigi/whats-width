@@ -167,3 +167,41 @@ p{
     font-size: 18px; 
   }
 }
+h5 {
+   text-align: center; 
+}
+
+p {
+    text-align: justify;
+    line-height: 20px;
+}
+
+.boxes {
+/*    padding: 20px;*/
+}
+/*  clear fix */
+.boxes::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.box{
+  box-sizing: border-box;    
+  width: calc(33.33333% - 20px);
+  margin: 10px;
+  padding: 10px;    
+  border: 5px solid pink;
+  float: left;  
+  color: #fff;
+  background: #9C27B0;    
+  text-align: center;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

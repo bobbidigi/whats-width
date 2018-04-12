@@ -12,7 +12,9 @@
   
   </head>
 <body>
-  <header><h1>The Box Model</h1> <span id="pts">0</span></header>
+  <header>
+  <h1>The Box Model</h1> <span id="pts">0</span>
+  </header>
   <div id="stripe">
     <button id="reset">New Width</button>
     <button id="contentBox" class="mode selected">content-box</button>
@@ -50,13 +52,26 @@
   <div class="result open"></div>
   <section id="second-section" class="main-section">
     <h4>More details about using what youve just learned.</h4>
-    <p>It's important to know your elements true width when using percentages and calc().</p>
-    <p>The most useful ability of calc() is its ability to mix units, like percentages and pixels.Page not finished</p>
+      <p>It's important to know the elements true width in the DOM when using <strong>percentages and calc()</strong>.The most useful ability of calc() is its ability to mix units, like <strong>percentages and pixels</strong>.Page not finished</p>
+      <div class="boxes">
+          <div class="box box1">
+            <h2>1</h2>
+          </div>
+          <div class="box box2">
+            <h2>2</h2>
+          </div>
+          <div class="box box3">
+            <h2>3</h2>
+          </div>
+      </div>
+      <p><strong>Width = 33.33333% + (margin x 2)</strong></p>
+      <p>With calc(), you can subtract the px to get an even <strong>33.33333%</strong></p> 
   <code class="code-three">
-  <span class="yellow">#box</span>{  
-  <span class="purple">width</span>:<span class="orange">calc(50% - 84px)</span>;
-  <span class="purple">margin</span>:<span class="orange">20px</span>; 
-  <span class="purple">padding</span>:<span class="orange">20px</span>; 
+  <span class="yellow">#box</span>{
+  <span class="purple">box-sizing</span>:<span class="orange">border-box</span>;  
+  <span class="purple">width</span>:<span class="orange">calc(33.33333% - 20px)</span>;
+  <span class="purple">margin</span>:<span class="orange">10px</span>; 
+  <span class="purple">padding</span>:<span class="orange">10px</span>; 
   <span class="purple">border</span>:<span class="orange">2px solid pink</span>; 
   }</code>
   </section>
