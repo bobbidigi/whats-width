@@ -1,4 +1,5 @@
 // eliminate comments
+// the answers aren't sorting anymore have no idea when it happened
 // size and space things appropriately
 // use descriptive variable names
 // get elements by ids when possible
@@ -161,7 +162,7 @@ function checkResult(e,answer){
   }else if(currentNumber === answer && points <= 2){
        addPoints(1);
        resultDisplay.style.display = 'flex';
-       resultDisplay.innerHTML = `<h1>Congratulation you won the game!!</h1>
+       resultDisplay.innerHTML = `<h1 id='congrats'>Congratulation you won the game!!</h1>
                                   <button id='reset-won'>PLAY AGAIN </button>`;
        setTimeout(function(){
          points = 0;

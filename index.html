@@ -41,18 +41,21 @@
   <span class="purple">border</span>:<span class="orange" id="border"></span>; 
   }</code>
   </code>
-  </section>
-<div id="great">Great Job!!!</div>
   <div id="stripe">
     <button id="answer0"></button>
     <button id="answer1"></button>
     <button id="answer2"></button>
   </div>
-
+  <h4>border-box</h4>
+  <p class="math">width = width + (margin x2)</p>
+  <h4>content-box: default</h4>
+  <p class="math">width = width + (margin x2) + (padding x2) + (border x2)</p>
+  </section>
+<div id="great">Great Job!!!</div>
   <div class="result open"></div>
   <section id="second-section" class="main-section">
     <h4>More details about using what youve just learned.</h4>
-      <p>It's important to know the elements true width in the DOM when using <strong>percentages and calc()</strong>.The most useful ability of calc() is its ability to mix units, like <strong>percentages and pixels</strong>.Page not finished</p>
+      <p>It's important to know the elements true width in the DOM when using <strong>percentages and calc()</strong>.The most useful ability of calc() is its ability to mix units, like <strong>percentages and pixels</strong>.</p>
       <div class="boxes">
           <div class="box box1">
             <h2>1</h2>
@@ -64,8 +67,7 @@
             <h2>3</h2>
           </div>
       </div>
-      <p><strong>Width = 33.33333% + (margin x 2)</strong></p>
-      <p>With calc(), you can subtract the px to get an even <strong>33.33333%</strong></p> 
+      <p>With calc(), you can subtract the margin px to get an even <strong>33.33333%</strong></p> 
   <code class="code-three">
   <span class="yellow">#box</span>{
   <span class="purple">box-sizing</span>:<span class="orange">border-box</span>;  
@@ -74,6 +76,7 @@
   <span class="purple">padding</span>:<span class="orange">10px</span>; 
   <span class="purple">border</span>:<span class="orange">2px solid pink</span>; 
   }</code>
+  <p class="center"><strong>Width = 33.33333% + (margin x 2)</strong></p>
   </section>
   <footer><h5> Rob Allen</h5></footer>  
   
