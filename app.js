@@ -31,6 +31,7 @@ const margin = document.getElementById('margin');
 const padding = document.getElementById('padding');
 const border = document.getElementById('border');
 
+//const greatJob = document.getElementById('great');
 const answerButton0 = document.getElementById('answer0');
 const answerButton1 = document.getElementById('answer1');
 const answerButton2 = document.getElementById('answer2');
@@ -75,10 +76,9 @@ function sizeContentBox() {
   borderBoxCode.style.display = 'none';
 }
 
-function addPoints(point) {
-  points += point;
-  score.innerText = points;
-  greatJobAnimation();      
+function addPoints(i) {
+  points += i;
+  score.innerText = points;        
 }
 
 function greatJobAnimation() {
@@ -128,8 +128,8 @@ function answerBtns() {
   const incorrectAnswer2 = correctAnswer - (CSS[3] * 2);
   const answers = [correctAnswer, incorrectAnswer1, incorrectAnswer2];
 
-  answers.sort((a, b) => a < b);
-
+  //sort the answers
+  answers.sort((a,b) => 0.5 - Math.random());
   const ansButtons = [answerButton0, answerButton1, answerButton2];
   ansButtons.forEach((btn, i) => {
     btn.innerHTML = answers[i];
@@ -158,9 +158,11 @@ function checkResult(e,answer){
   let currentNumber = Number(e.target.textContent);
    if(currentNumber === answer && points <= 1){
      addPoints(1);
+     greatJobAnimation();   
      reset();
   }else if(currentNumber === answer && points <= 2){
        addPoints(1);
+       greatJobAnimation();
        resultDisplay.style.display = 'flex';
        resultDisplay.innerHTML = `<h1 id='congrats'>Congratulation you won the game!!</h1>
                                   <button id='reset-won'>PLAY AGAIN </button>`;
