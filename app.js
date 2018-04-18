@@ -35,6 +35,8 @@ const border = document.getElementById('border');
 const answerButton0 = document.getElementById('answer0');
 const answerButton1 = document.getElementById('answer1');
 const answerButton2 = document.getElementById('answer2');
+const scoreSound = document.getElementById('success-sound');
+const winGameSound = document.getElementById('win-sound');
 
 let boxBoolean = false;
 let bs = 'content-box';
@@ -45,7 +47,7 @@ function onLoad() {
   window.addEventListener('DOMContentLoaded', reset);
   resetButton.addEventListener('click', reset);
   contentBoxBtn.addEventListener('click', boxSizingProp);
-  borderBoxBtn.addEventListener('click', boxSizingProp);
+  borderBoxBtn.addEventListener('click', boxSizingProp);   
 }
 onLoad();
 
@@ -84,7 +86,8 @@ function addPoints(i) {
 function greatJobAnimation() {
    const greatJob = document.getElementById('great');
    greatJob.style.transition = 'opacity .5s linear 0s';
-   greatJob.style.opacity = 1;    
+   greatJob.style.opacity = 1;
+   scoreSound.play();     
    setTimeout(() => { greatJob.style.opacity = 0; }, 3000); 
 }
 
@@ -162,6 +165,7 @@ function checkResult(e,answer){
      reset();
   }else if(currentNumber === answer && points <= 2){
        addPoints(1);
+       winGameSound.play();
        greatJobAnimation();
        resultDisplay.style.display = 'flex';
        resultDisplay.innerHTML = `<h1 id='congrats'>Congratulation you won the game!!</h1>
