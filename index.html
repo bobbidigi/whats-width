@@ -28,7 +28,7 @@
   </div>
 
   <section class="main-section">
-    <h4>What is the elements true width?</h4>
+    <h4>What is the element's true width?</h4>
   <div id="guessWidth"></div>
   <code>
   <code class="code-one">
@@ -59,7 +59,7 @@
   <section id="second-section" class="main-section">
     <h4>Using calc with mixed units of measurement.</h4>
      <hr>
-      <p>It's important to know the elements true width in the DOM. Calc's most usful property is its ability to mix units of measurement, like <strong>percentages, ems and pixels</strong>.</p>
+      <p>It's important to know the element's true width in the DOM. The most useful property of calc is it's ability to mix units of measurement, like <strong>percentages, ems and pixels</strong>.</p>
       <div class="boxes">
           <div class="box box1">
             <h2>1</h2>
@@ -71,7 +71,7 @@
             <h2>3</h2>
           </div>
       </div>
-      <p>With calc(), you can subtract the margin, padding, and border depending on wether you have border-box or content-box.</p> 
+      <p>With calc(), you can subtract the margin, padding, and border widths.</p><p>If the box-sizing property is set to border-box, you only need to subtract the margin.</p> 
   <code class="code-three">
   <span class="yellow">#box</span>{  
   <span class="purple">width</span>:<span class="orange">calc(33.33333% - .5em - 30px)</span>;
