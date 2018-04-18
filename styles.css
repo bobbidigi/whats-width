@@ -95,15 +95,16 @@ p {
   clear: both;
 }
 .box{
-  box-sizing: border-box;    
-  width: calc(33.33333% - 20px);
-  margin: 10px;
+/*  box-sizing: border-box;    */
+  width: calc(33.33333% - .5em - 30px);
+  margin: .25em;
   padding: 10px;    
   border: 5px solid pink;
   float: left;  
   color: #fff;
   background: #9C27B0;    
   text-align: center;
+  border-radius: 5px;    
 }
 .cf:before,
 .cf:after {
@@ -165,6 +166,13 @@ footer, footer h1{
   padding: 6px 0;  
   margin: 0;    
   background: #009688; 
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer a:hover{
+    color:#6716e8;
 }
 /*media queries*/
 @media(min-width: 400px){
